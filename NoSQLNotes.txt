@@ -1,0 +1,18 @@
+NoSQL: The Big Picture (Andrew J. Brust)
+RELATIONAL
+-columns/rows
+-Multiple tables with a common key between tables to denote a relation
+NoSQL
+-Still have a concept of a individual data item like a "row" and a 
+collection of data items like a table but unlike in relational DBs the fields are not set.
+-i.e. for documents in a collection, the documents can have entirely different fields and 
+different numbers of fields
+-"Web scale" -> relational dbs can't handle (millions of concurrent users)
+-More specifically, each document is made of a key-value pair
+
+-NoSQL databases are commonly designed as distributed systems (reliable, throughput, latency),
+though you can run it on a single server if necessary
+CAP - NOSQL sacrifices consistency, relational sacrifices availability
+
+your audience knows what is mongodb ,but you can quickly cover like what is document 
+then quickly take them to indexes, partition key/ sharding etc.. 
