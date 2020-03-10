@@ -1,0 +1,14 @@
+Sharding
+	• MongoDB allows distribution of its contained data set across several replicas which collectively form a replica set
+		○ This means basically there are several daemon instances/background processes ("mongod") which all manage the same set of data
+			§ Each set of data is ideally on a separate machine but should at least refer to a physically separate location on disk 
+		○ Benefits:
+		○ Permits fault tolerance in the event of failure in one of the hosting servers
+		○ Greater throughput as disk accesses can be handled by different machines in the cluster, lower latency
+		○ Recovery upon failure
+	• Can elect to shard the database
+		○ Divides the database into separate partitions and places each partition onto (ideally) a separate cluster of machines
+		○ Different from full replication in that each cluster only holds a portion of the data
+		
+Indexing
+
